@@ -1,0 +1,73 @@
+/* Formatting the body */
+body {
+	font: 20px "Montserrat", sans-serif;
+	line-height: 1.8;
+	color: #f5f6f7;
+}
+
+p {
+	font-size: 16px;
+}
+
+.margin {margin-bottom: 45px;}
+
+/* Color of containers */
+.bg-white {
+	background-color: #ffffff;
+	color: #000000;
+}
+
+.bg-light-blue {
+	background-color: #c7e0e0; /* Blue */
+	 color: #2b2b2b;
+}
+.bg-grey {
+	background-color: #f6f6f6; /* grey */
+	 color: #ffffff;
+}
+.bg-light-green {
+	background-color: #c7dba7; /* light green */
+	 color: #272b21;
+}
+.bg-egg-shell { 
+    background-color: #f0ead6;
+    color: #ffffff;
+}
+
+/* adding padding to containers */
+.container-fluid {
+	padding-top: 70px;
+	padding-bottom: 70px;
+}
+
+.container-less-padding {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+/* Navbar */
+.navbar {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 0;
+    font-size: 12px;
+    letter-spacing: 5px;
+}
+
+.navbar-nav li a:hover {
+    color: #1abc9c !important;
+}
+
+/* Buttons */
+.customButton {
+	border: 10px solid transparent;
+	width: 10%;
+	height: 10%;
+	opacity: 0.7;
+}
+
+.customButton:hover {
+	border-color: #ddd6f0;
+}
