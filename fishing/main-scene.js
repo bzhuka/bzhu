@@ -73,13 +73,13 @@ class Fishing_Game extends Scene_Component
 
         this.t_reset = false;
 
-        this.fanfare = new Audio("fishing/assets/Fanfare.flac");
+        this.fanfare = new Audio("fishing/assets/Fanfare.mp3");
         this.fanfare.loop = false;
         this.fanfare_count = 0;
-        this.menu = new Audio("fishing/assets/Menu.flac");
+        this.menu = new Audio("fishing/assets/Menu.mp3");
         this.menu.loop = true;
         this.menu_volume = 0.5;
-        this.veiled_in_black = new Audio("fishing/assets/Veiled in Black.flac");
+        this.veiled_in_black = new Audio("fishing/assets/Veiled in Black.mp3");
         this.veiled_in_black.loop = true;
         this.veiled_in_black_volume = 0.5;
         this.veiled_in_black.volume = 0.5;
