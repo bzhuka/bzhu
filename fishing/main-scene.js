@@ -49,41 +49,41 @@ class Fishing_Game extends Scene_Component
 
         this.materials =     
           { pond:          context.get_instance( Phong_Shader ).material( Color.of( 0, 123/255, 167/255, .5 ), { ambient: 0.3} ),
-            ground:          context.get_instance( Fake_Bump_Map ).material( Color.of( 109/255, 78/255, 0/255, 1 ), { ambient: .40, texture: context.get_instance( "assets/ground_texture.jpeg", false ) } ),
+            ground:          context.get_instance( Fake_Bump_Map ).material( Color.of( 109/255, 78/255, 0/255, 1 ), { ambient: .40, texture: context.get_instance( "fishing/assets/ground_texture.jpeg", false ) } ),
             shadow:         context.get_instance(Shadow_Shader).material( Color.of( 71/255, 59/255, 51/255, 1 ), { ambient: 1, texture: this.texture } ),
             red:            context.get_instance( Phong_Shader ).material( Color.of( 1 ,0, 0 ,1 ), { ambient: 1 } ),
             green:          context.get_instance( Phong_Shader ).material( Color.of( 0 ,1, 0 ,1 ), { ambient: 1 } ),
             white:          context.get_instance( Phong_Shader ).material( Color.of( 1 ,1, 1 ,1 ), { ambient: 1 } ),  
-            king_Fish:      context.get_instance( Phong_Shader ).material( Color.of(0,0,0,1), { ambient: 1, texture: context.get_instance( "assets/King_Of_The_Pond.png", false ) } ),
-            mystery_Fish:   context.get_instance( Phong_Shader ).material( Color.of(0,0,0,1), { ambient: 1, texture: context.get_instance( "assets/Mystery_Fish.png", false ) } ),
-            plain_Fish:     context.get_instance( Phong_Shader ).material( Color.of(0,0,0,1), { ambient: 1, texture: context.get_instance( "assets/Plain_Ol_Fish.png", false ) } ),
-            small_Fry:      context.get_instance( Phong_Shader ).material( Color.of(0,0,0,1), { ambient: 1, texture: context.get_instance( "assets/Small_Fry.png", false ) } ),
-            touchy_Fish:    context.get_instance( Phong_Shader ).material( Color.of(0,0,0,1), { ambient: 1, texture: context.get_instance( "assets/Touchy_Fish.png", false ) } ),
-            nibbler:        context.get_instance( Phong_Shader ).material( Color.of(0,0,0,1), { ambient: 1, texture: context.get_instance( "assets/Nibbler.png", false ) } ),
-            friedman_Fish:       context.get_instance( Phong_Shader ).material( Color.of(0,0,0,1), { ambient: 1, texture: context.get_instance( "assets/friedman.jpeg", false ) } ),
-            start_sign:           context.get_instance( Fake_Bump_Map ).material( Color.of( 0, 0, 0,1 ), { ambient: .8, diffusivity: .5, specularity: .5 , texture: context.get_instance( "assets/start_sign.jpg", false )  } ),
-            end_sign:           context.get_instance( Fake_Bump_Map ).material( Color.of( 0, 0, 0,1 ), { ambient: .8, diffusivity: .5, specularity: .5 , texture: context.get_instance( "assets/end_game.jpg", false )  } ),
+            king_Fish:      context.get_instance( Phong_Shader ).material( Color.of(0,0,0,1), { ambient: 1, texture: context.get_instance( "fishing/assets/King_Of_The_Pond.png", false ) } ),
+            mystery_Fish:   context.get_instance( Phong_Shader ).material( Color.of(0,0,0,1), { ambient: 1, texture: context.get_instance( "fishing/assets/Mystery_Fish.png", false ) } ),
+            plain_Fish:     context.get_instance( Phong_Shader ).material( Color.of(0,0,0,1), { ambient: 1, texture: context.get_instance( "fishing/assets/Plain_Ol_Fish.png", false ) } ),
+            small_Fry:      context.get_instance( Phong_Shader ).material( Color.of(0,0,0,1), { ambient: 1, texture: context.get_instance( "fishing/assets/Small_Fry.png", false ) } ),
+            touchy_Fish:    context.get_instance( Phong_Shader ).material( Color.of(0,0,0,1), { ambient: 1, texture: context.get_instance( "fishing/assets/Touchy_Fish.png", false ) } ),
+            nibbler:        context.get_instance( Phong_Shader ).material( Color.of(0,0,0,1), { ambient: 1, texture: context.get_instance( "fishing/assets/Nibbler.png", false ) } ),
+            friedman_Fish:       context.get_instance( Phong_Shader ).material( Color.of(0,0,0,1), { ambient: 1, texture: context.get_instance( "fishing/assets/friedman.jpeg", false ) } ),
+            start_sign:           context.get_instance( Fake_Bump_Map ).material( Color.of( 0, 0, 0,1 ), { ambient: .8, diffusivity: .5, specularity: .5 , texture: context.get_instance( "fishing/assets/start_sign.jpg", false )  } ),
+            end_sign:           context.get_instance( Fake_Bump_Map ).material( Color.of( 0, 0, 0,1 ), { ambient: .8, diffusivity: .5, specularity: .5 , texture: context.get_instance( "fishing/assets/end_game.jpg", false )  } ),
             tree_leaves:    context.get_instance( Fake_Bump_Map ).material( Color.of( 0,.6,0,1 ), { ambient: .7, diffusivity: .5, specularity: .5 } ),
             tree_stem:      context.get_instance( Fake_Bump_Map ).material( Color.of( 70/255, 50/255, 5/255,1 ), { ambient: .9, diffusivity: .5, specularity: .5 } ),
-            rock:           context.get_instance( Fake_Bump_Map ).material( Color.of( 86/255, 64/255, 29/255,1 ), { ambient: .5, diffusivity: 5, specularity: .5 , texture: context.get_instance( "assets/rock_tex.jpg", false )  } ),
-            text_image:        context.get_instance( Phong_Shader ).material( Color.of( 0,0,0,1 ), { ambient: 1, diffusivity: 0, specularity: 0, texture: context.get_instance( "/assets/text.png", false ) } ),
+            rock:           context.get_instance( Fake_Bump_Map ).material( Color.of( 86/255, 64/255, 29/255,1 ), { ambient: .5, diffusivity: 5, specularity: .5 , texture: context.get_instance( "fishing/assets/rock_tex.jpg", false )  } ),
+            text_image:        context.get_instance( Phong_Shader ).material( Color.of( 0,0,0,1 ), { ambient: 1, diffusivity: 0, specularity: 0, texture: context.get_instance( "fishing/assets/text.png", false ) } ),
           }
 
         this.lights = [ new Light( Vec.of( 0, 5, 40, 1 ), Color.of( 250/255,214/255,165/255,1 ), 1000 ) ];
 
         this.t_reset = false;
 
-        this.fanfare = new Audio("assets/Fanfare.flac");
+        this.fanfare = new Audio("fishing/assets/Fanfare.flac");
         this.fanfare.loop = false;
         this.fanfare_count = 0;
-        this.menu = new Audio("assets/Menu.flac");
+        this.menu = new Audio("fishing/assets/Menu.flac");
         this.menu.loop = true;
         this.menu_volume = 0.5;
-        this.veiled_in_black = new Audio("assets/Veiled in Black.flac");
+        this.veiled_in_black = new Audio("fishing/assets/Veiled in Black.flac");
         this.veiled_in_black.loop = true;
         this.veiled_in_black_volume = 0.5;
         this.veiled_in_black.volume = 0.5;
-        this.splash = new Audio("assets/splash.mp3");
+        this.splash = new Audio("fishing/assets/splash.mp3");
         this.splash.loop = false;
 
         this.crosshair_Matrix = Mat4.identity().times( Mat4.scale([1, 1, .1]));
